@@ -18,9 +18,10 @@ node {
             sh 'npm prune'
             sh 'npm install'
             sh 'npm test'
-       }
 
-
+       stage 'Deploy'
+            print "Nah, nothing is really deployed, just testing..."
+    }
     catch (err) {
 
         throw err
