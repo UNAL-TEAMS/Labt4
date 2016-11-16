@@ -5,7 +5,6 @@ node {
     try {
 
        stage 'Checkout'
-
             checkout scm
 
        stage 'Test'
